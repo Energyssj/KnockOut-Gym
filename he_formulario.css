@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+/*SECCION FORMULARIO*/
+
+.sec-form {
+  background-color: #a8a8a8;
+  padding: 40px;
+  border: 3px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.div-gral-form {
+  background-color: #f8fafa;
+  padding: 30px;
+  border: 2px solid #d62828;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+.campo {
+  background-color: #d62828;
+  padding: 15px;
+  border: 1px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: black;
+}
+.form input[type="text"],
+.form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #0f172a;
+  background-color: #f8fafa;
+  border-radius: 8px;
+}
+.form button {
+  background-color: #f8fafa;
+  color: #0f172a;
+  border: 1.5px solid #0f172a;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body {
+  background-color: #f8fafa;
+  font-family: Montserrat;
+}
+
+@media (max-width: 768px) {
+  .sec-form {
+    padding: 20px;
+  }
+
+  .div-gral-form {
+    width: 100%;
+    padding: 20px;
+  }
+}

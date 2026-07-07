@@ -1,0 +1,35 @@
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: black;
+  }
+
+  .Menu-Horizontal {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 90px;
+    left: 0;
+  }
+
+  .Menu-Horizontal.active {
+    display: flex;
+  }
+
+  .Menu-Horizontal li {
+    border-bottom: 1px solid #ccc;
+  }
+}

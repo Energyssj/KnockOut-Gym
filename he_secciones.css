@@ -1,0 +1,160 @@
+.sec-prod-serv {
+  padding: 60px 20px;
+  width: 100%;
+  background-color: #a8a8a8;
+}
+.div-gral-prod-serv {
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  margin: auto;
+  gap: 40px;
+  width: 100%;
+}
+.div-prod-serv-text {
+  width: 50%;
+  padding-left: 130px;
+}
+.div-prod-serv-img {
+  width: 50%;
+}
+.div-prod-serv-text h1 {
+  font-size: 4rem;
+  color: #0f172a;
+  margin-top: 10px;
+}
+
+.botones {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-principal {
+  background-color: #d62828;
+  color: #f8f8f8;
+}
+
+.btn-principal:hover {
+  background-color: #b71c1c;
+}
+
+.btn-secundario {
+  border: 2px solid #d62828;
+  color: #d62828;
+}
+
+.btn-secundario:hover {
+  background-color: #d62828;
+  color: #f8f8f8;
+}
+
+.div-prod-serv-text .badge {
+  display: inline-block;
+  background-color: #d6282881;
+  color: #d62828;
+  padding: 6px 10px;
+  border-radius: 16px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+}
+.div-prod-serv-text p {
+  color: #0f172a;
+  line-height: 1.5;
+  max-width: 550px;
+}
+.div-prod-serv-img img {
+  border-radius: 5%;
+}
+
+.sec-prod-dig {
+  padding: 60px 20px;
+  background-color: #a8a8a8;
+}
+.div-gral-prod-dig {
+  align-items: center;
+  margin: auto;
+  gap: 40px;
+  width: 100%;
+}
+
+.div-prod-dig-text {
+  padding-left: 130px;
+}
+
+.div-prod-dig-video {
+  margin-right: 160px;
+}
+
+.div-prod-dig-text h2 {
+  color: #0f172a;
+}
+.div-prod-dig-text p {
+  color: #0f172a;
+  line-height: 1.5;
+}
+.div-gral-prod-dig {
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  margin: auto;
+  gap: 20px;
+}
+
+body {
+  background-color: #a8a8a8;
+  font-family: Montserrat;
+}
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+  .div-gral-prod-serv {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .div-prod-serv-text,
+  .div-prod-serv-img {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .div-prod-serv-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .div-prod-serv-img img {
+    width: 90%;
+    height: auto;
+  }
+
+  .div-gral-prod-dig {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .div-prod-dig-video iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .botones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%;
+    text-align: center;
+  }
+}
