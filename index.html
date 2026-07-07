@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knockout Gym</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="he_cabecera.css" />
+    <link rel="stylesheet" href="he_secciones.css" />
+    <link rel="stylesheet" href="he_formulario.css" />
+    <link rel="stylesheet" href="he_pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    <nav class="top-header">
+      <a href="" class="logo">
+        <img height="50" width="200" src="KnockOut Gym-Logo1.png" alt="logo" />
+      </a>
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="Menu-Horizontal">
+        <li>
+          <a href="">Inicio</a>
+        </li>
+        <li>
+          <a href="">Entrenamientos</a>
+          <ul class="Menu-CD">
+            <li><a href="">Boxeo</a></li>
+            <li><a href="">Muay Thai</a></li>
+            <li><a href="">KickBoxing</a></li>
+            <li><a href="">MMA</a></li>
+            <li><a href="">JiuJitsu</a></li>
+          </ul>
+        </li>
+        <li><a href="">Beneficios</a></li>
+        <li><a href="">Galeria</a></li>
+        <li><a href="">Contacto</a></li>
+        <li class="Registrarse"><a href="">Inscríbete</a></li>
+      </ul>
+    </nav>
+    <!--SECCION CON IMAGEN-->
+    <section class="sec-prod-serv">
+      <div class="div-gral-prod-serv">
+        <div class="div-prod-serv-text">
+          <p class="badge">Entrenamiento para todos los niveles.</p>
+          <h1>Domina el ring, supera tus límites</h1>
+          <p>
+            Entrena boxeo con técnicas profesionales, mejora tu condición física
+            y desarrolla disciplina, velocidad y confianza.
+          </p>
+          <div class="botones">
+            <a href="" class="btn btn-principal">Comenzar Ahora</a>
+            <a href="" class="btn btn-secundario">Ver Entrenamientos</a>
+          </div>
+        </div>
+
+        <div class="div-prod-serv-img">
+          <img
+            height="570"
+            width="800"
+            src="KnockOut Gym-Img1.png"
+            alt="img1"
+          />
+        </div>
+      </div>
+    </section>
+    <!--SECCION CON VIDEO-->
+    <section class="sec-prod-dig">
+      <div class="div-gral-prod-dig">
+        <div class="div-prod-dig-text">
+          <h2>¿Como son nuestros entrenamientos?</h2>
+          <p>
+            Aprende desde lo básico hasta técnicas avanzadas con entrenadores
+            especializados.
+          </p>
+        </div>
+        <div class="div-prod-dig-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/mFePQV-jhcc?si=MoGw9QiXFSFPANSt"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <!--SECCION FORMULARIO-->
+    <section class="sec-form">
+      <div class="div-gral-form">
+        <h2>¡Inscribete!</h2>
+        <p>
+          Completa tus datos para recibir información sobre nuestros
+          entrenamientos.
+        </p>
+        <form class="form">
+          <!--caja texto: input:text-->
+          <div class="campo">
+            <label for="nombres">Nombres:</label>
+            <input
+              type="text"
+              id="nombres"
+              name="nombres"
+              placeholder="Escriba aquí:"
+            />
+          </div>
+          <div class="campo">
+            <label for="apellidos">Apellidos:</label>
+            <input
+              type="text"
+              id="apellidos"
+              name="apellidos"
+              placeholder="Escriba aquí:"
+            />
+          </div>
+          <!--lista desplegable: select/option-->
+          <div class="campo">
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" name="ciudad">
+              <option value="">Seleccione una ciudad</option>
+              <option value="Amazonas">Amazonas</option>
+              <option value="Ancash">Ancash</option>
+              <option value="Apurimac">Apurimac</option>
+              <option value="Arequipa">Arequipa</option>
+              <option value="Ayacucho">Ayacucho</option>
+              <option value="Cajamarca">Cajamarca</option>
+              <option value="Cusco">Cusco</option>
+              <option value="Huancavelica">Huancavelica</option>
+              <option value="Ica">Ica</option>
+              <option value="Junin">Junin</option>
+              <option value="La Libertad">La Libertad</option>
+              <option value="Lambayeque">Lambayeque</option>
+              <option value="Lima">Lima</option>
+              <option value="Loreto">Loreto</option>
+              <option value="Madre de Dios">Madre de Dios</option>
+              <option value="Moquegua">Moquegua</option>
+              <option value="Pasco">Pasco</option>
+              <option value="Piura">Piura</option>
+              <option value="Puno">Puno</option>
+              <option value="San Martín">San Martín</option>
+              <option value="Tacna">Tacna</option>
+              <option value="Tumbes">Tumbes</option>
+              <option value="Ucayali">Ucayali</option>
+            </select>
+          </div>
+          <!--CHECKBOX-->
+          <div class="campo">
+            <label for="Origen">¿Qué deseas mejorar?</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="intereses"
+                    value="intereses"
+                  />Fuerza</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="intereses"
+                    value="intereses"
+                  />Velocidad</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="intereses"
+                    value="intereses"
+                  />Resistencia</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="intereses"
+                    value="intereses"
+                  />Defensa</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="intereses"
+                    value="intereses"
+                  />Pérdida de Peso</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--RADIO-->
+          <div class="campo">
+            <label>Nivel de experiencia</label>
+            <ul class="lista-radio">
+              <li>
+                <label>
+                  <input
+                    type="radio"
+                    name="sexo"
+                    value="Principiante"
+                  />Principiante</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="radio"
+                    name="sexo"
+                    value="Intermedio"
+                  />Intermedio</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="radio"
+                    name="sexo"
+                    value="Avanzado"
+                  />Avanzado</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--RADIO2-->
+          <div class="campo">
+            <label>¿Has practicado boxeo antes?</label>
+            <ul class="lista-radio">
+              <li>
+                <label>
+                  <input
+                    type="radio"
+                    name="neurodivergente"
+                    value="Sí"
+                  />Sí</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="radio"
+                    name="neurodivergente"
+                    value="No"
+                  />No</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--BUTTON-->
+          <button type="submit">Inscribirse</button>
+        </form>
+      </div>
+    </section>
+    <!--PIE DE PAGINA-->
+    <!--CREAR UN PIE DE PAGINA CON SECCIONES Y MINIMO 3 DIVISIONES-->
+    <!-- PIE DE PAGINA -->
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              height="40"
+              width="150"
+              src="KnockOut Gym-Logo1.png"
+              alt="Logo"
+            />
+            <p>Knockout Gym</p>
+            <small>© 2026 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="X"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145805.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="menu_toggle.js"></script>
+  </body>
+</html>
